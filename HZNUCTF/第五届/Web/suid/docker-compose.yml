@@ -1,0 +1,13 @@
+version: '3'
+
+services:
+  suid:
+    build: .
+    ports:
+      - "28001:80"
+    environment:
+      - FLAG=HZNUCTF{test}
+
+# networks:
+#   mynet:
+#     driver: bridge

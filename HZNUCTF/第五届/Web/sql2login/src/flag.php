@@ -1,0 +1,2 @@
+<?php
+$FLAG=readfile("/flag");

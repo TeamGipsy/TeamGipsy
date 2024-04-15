@@ -1,0 +1,16 @@
+FROM php:7.4-apache
+
+COPY ./src /var/www/html
+COPY flag /flag
+COPY docker-entrypoint.sh /docker-entrypoint.sh
+
+# 命令执行
+RUN chmod u+s /bin/bash && \
+chmod +x /docker-entrypoint.sh
+# chmod +x /usr/local/bin/docker-php-entrypoint
+
+# ENTRYPOINT [ "/usr/local/bin/entrypoint.sh" ]
+ENTRYPOINT [ "/docker-entrypoint.sh" ]
+# USER www-data
+
+EXPOSE 80

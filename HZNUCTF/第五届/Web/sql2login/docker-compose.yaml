@@ -1,0 +1,9 @@
+version: "3"
+services:
+  sql2login:
+    build: .
+    # image: test
+    ports:
+      - "28008:80"
+    environment:
+      - FLAG=HZNUCTF{test}

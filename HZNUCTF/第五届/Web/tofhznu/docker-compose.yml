@@ -1,0 +1,9 @@
+version: '3'
+
+services:
+  hardsql:
+    build: .
+    ports:
+      - "28009:80"
+    environment:
+      - FLAG=HZNUCTF{test}
